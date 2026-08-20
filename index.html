@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How Does Your Eye See?</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="app-header">
+            <h1>👁️ How Does Your Eye See?</h1>
+
+            <p>
+                Move the object and discover how your eye focuses.
+            </p>
+        </header>
+
+
+        <!-- Main Simulation -->
+        <section class="simulation-card">
+
+            <h2>🔍 Explore Your Eye</h2>
+
+            <p class="instruction">
+                Drag the apple closer to the eye or move it farther away.
+            </p>
+
+
+            <!-- Simulation Area -->
+            <div class="simulation-area">
+
+                <!-- Object -->
+                <div id="object">
+                    🍎
+                </div>
+
+
+                <!-- Light Rays -->
+                <div class="rays">
+
+                    <div class="ray ray-1"></div>
+                    <div class="ray ray-2"></div>
+                    <div class="ray ray-3"></div>
+
+                </div>
+
+
+                <!-- Eye -->
+                <div id="eye">
+
+                    <!-- Cornea -->
+                    <div id="cornea"></div>
+
+                    <!-- Pupil -->
+                    <div id="pupil"></div>
+
+                    <!-- Lens -->
+                    <div id="lens"></div>
+
+                    <!-- Retina -->
+                    <div id="retina"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Distance Indicator -->
+            <div class="distance-indicator">
+
+                <span>FAR</span>
+
+                <input
+                    type="range"
+                    id="distance-slider"
+                    min="0"
+                    max="100"
+                    value="20"
+                >
+
+                <span>NEAR</span>
+
+            </div>
+
+
+            <!-- Feedback -->
+            <div id="feedback">
+
+                <h3>👀 Look at the eye!</h3>
+
+                <p>
+                    Move the apple to see what happens.
+                </p>
+
+            </div>
+
+
+            <!-- Concept Explanation -->
+            <div class="concept-box">
+
+                <h3>💡 What is happening?</h3>
+
+                <p id="concept-text">
+                    Your eye changes the shape of its lens to focus light.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
